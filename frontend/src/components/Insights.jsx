@@ -42,7 +42,7 @@ const Insights = () => {
       {dueSoon.map((each, idx) => (
         <p className="insights-string" key={idx}>
           You Have <span>{each.count}</span> Tasks Due Soon of Priority
-          <span> {each.priority}</span>
+          <span> !{each.priority}</span>
         </p>
       ))}
 
