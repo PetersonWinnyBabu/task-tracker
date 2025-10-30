@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./app.css";
 import CreateTaskForm from "./components/CreateTaskForm";
 import TaskListView from "./components/TaskListView";
-import Insights from "./components/insights";
+import Insights from "./components/Insights";
 
 const App = () => {
   const [tasksData, setTaskData] = useState([]);
