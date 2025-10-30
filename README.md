@@ -53,6 +53,20 @@ task-tracker/
 
 ## 🚀 Setup Instructions
 
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://link-to-project](https://github.com/PetersonWinnyBabu/task-tracker
+```
+
+Go to the project directory
+
+```bash
+  cd task-tracker
+```
+
 ### 1️⃣ Backend Setup
 
 ```bash
