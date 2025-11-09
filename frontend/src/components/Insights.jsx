@@ -9,7 +9,7 @@ const Insights = () => {
 
   const fetchInsights = async () => {
     try {
-      const url = `http://localhost:3000/insights`;
+      const url = `https://task-tracker-j2u7.onrender.com/insights`;
       const response = await fetch(url);
       const insightData = await response.json();
       setInsight(insightData);

@@ -12,7 +12,9 @@ const App = () => {
   const [status, setStatus] = useState("Open");
   const [sortBy, setSortBy] = useState("");
 
-  const getTaskData = async (url = `http://localhost:3000/tasks`) => {
+  const getTaskData = async (
+    url = `https://task-tracker-j2u7.onrender.com/tasks`
+  ) => {
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
@@ -24,7 +26,7 @@ const App = () => {
   }, []);
 
   const deleteItem = async (id) => {
-    const url = `http://localhost:3000/tasks`;
+    const url = `https://task-tracker-j2u7.onrender.com/tasks`;
     const options = {
       method: "DELETE",
     };
@@ -35,7 +37,7 @@ const App = () => {
   };
 
   const handleFilters = () => {
-    const url = `http://localhost:3000/tasks?priority=${priority}&status=${status}&sort_by=${sortBy}`;
+    const url = `https://task-tracker-j2u7.onrender.com/tasks?priority=${priority}&status=${status}&sort_by=${sortBy}`;
     getTaskData(url);
   };
 
